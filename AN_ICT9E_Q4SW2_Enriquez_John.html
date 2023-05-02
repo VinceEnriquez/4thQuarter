@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+	<style type="text/css">
+		h1{
+			font-family: Vina Sans;
+			font-family: Antonio;
+			padding: 10px;
+			text-align: center;
+		}
+
+		img	{
+			width: 100;
+		}
+	</style>
+	<title>Q4 Seatwork 2</title>
+</head>
+<body style="background-color: #FEF2F4;">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
+			<a class="navbar-bran text-light"><h1>conversion.org</h1></a>
+		  	<ul class="navbar-nav">
+				<li class="nav-item"><a href ="#" class="nav-link">HOME</a></li>
+				<li class="nav-item"><a href ="#" class="nav-link">ABOUT US</a></li>
+				<li class="nav-item"><a href ="#" class="nav-link">CONTACT US</a></li>	
+			</ul>
+		<form class="form-inline">
+       <input class="form-control" type="search" aria-label="Search">
+        <button class="btn btn-info my-2 my-sm-0" type="submit" style="text-align: left;">Search</button>
+      </form>
+		</nav>
+		</ul>
+<div class="container">
+	<h1 style="center">Temperature Conversion</h1>
+	<p id="DT" class="text-center"></p>
+
+
+	<script style="text-align: center;">
+		const D = new Date();
+		document.getElementById('DT').innerHTML = D;
+
+	</script>
+
+
+<table class="table table-bordered table-hover table-dark">
+	<tr>
+	    <th style="	text-align: center	;">Fahrenheit(0F)</th>
+	    <th style="	text-align: center	;">Celsius (0C)</th>
+	    <th style="text-align: center;"> Description</th>s
+	</tr>
+	<tr>
+		<td>
+			<form style="text-align: center;">
+				<input type="text" id="num1"><br><br>
+				<button type="submit1" onclick="Compute()" class="btn btn-info btn-block"> Calculate</button>
+			</form>
+		</td>
+	<td>
+	</td>
+	<td>
+		<img src="https://www.wikihow.com/images/thumb/2/2c/Estimate-Celsius-Temperatures-in-Fahrenheit-Step-10-Version-3.jpg/aid11717-v4-1200px-Estimate-Celsius-Temperatures-in-Fahrenheit-Step-10-Version-3.jpg" width="200" style="text-align: center;">
+	</td>
+
+
+<script type="text/javascript">
+	function Compute(){
+		let num1 = document.getElementById("num1").value;
+		let part = Number(num1 - 32)
+		let product = Number(part * 5/9)
+
+		window.alert("Fahrenheit to Celsius: " + product) ;
+	}
+</script>
+<footer>
+	<small>&copy; JVMEnriquez 2023</small>
+</footer>
+</body>
+</html>
